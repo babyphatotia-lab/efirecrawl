@@ -1,12 +1,12 @@
 # 🔥 Firecrawl
 
-Crawl and convert any website into LLM-ready markdown. Built by [Mendable.ai](https://mendable.ai?ref=gfirecrawl) and the firecrawl community. Includes powerful search/serp scraping, crawling, and data extraction capabilities.
+Crawl and convert any website into LLM-ready markdown or structured data. Built by [Mendable.ai](https://mendable.ai?ref=gfirecrawl) and the Firecrawl community. Includes powerful scraping, crawling and data extraction capabilities.
 
 _This repository is in its early development stages. We are still merging custom modules in the mono repo. It's not completely yet ready for full self-host deployment, but you can already run it locally._
 
 ## What is Firecrawl?
 
-[Firecrawl](https://firecrawl.dev?ref=github) is an API service that takes a URL, crawls it, and converts it into clean markdown. We crawl all accessible subpages and give you clean markdown for each. No sitemap required.
+[Firecrawl](https://firecrawl.dev?ref=github) is an API service that takes a URL, crawls it, and converts it into clean markdown or structured data. We crawl all accessible subpages and give you clean data for each. No sitemap required.
 
 _Pst. hey, you, join our stargazers :)_
 
@@ -114,7 +114,7 @@ Response:
 
 ### Search (Beta)
 
-Used to search the web, get the most relevant results, scrap each page and return the markdown.
+Used to search the web, get the most relevant results, scrape each page and return the markdown.
 
 ```bash
 curl -X POST https://api.firecrawl.dev/v0/search \
@@ -296,7 +296,6 @@ npm install @mendable/firecrawl-js
 1. Get an API key from [firecrawl.dev](https://firecrawl.dev)
 2. Set the API key as an environment variable named `FIRECRAWL_API_KEY` or pass it as a parameter to the `FirecrawlApp` class.
 
-
 ### Scraping a URL
 
 To scrape a single URL with error handling, use the `scrapeUrl` method. It takes the URL as a parameter and returns the scraped data as a dictionary.
@@ -402,7 +401,6 @@ const searchResults = await app.search(query, {
 });
 
 ```
-
 
 ## Contributing
 
